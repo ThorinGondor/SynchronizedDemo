@@ -10,6 +10,7 @@ public class SynchronizedDemo implements Runnable {
      */
     public static synchronized void increase(){
         i++;
+        out.println("Thread: " + Thread.currentThread().getId());
     }
     @Override
     public void run(){
